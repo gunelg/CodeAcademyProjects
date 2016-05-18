@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		background: #ebecec;
+	}
+	</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+a = true;
+ function myFirst(){
+	if(a){
+		document.open();
+		document.write("<div  class='wrapper'  style='z-index: 6; background: #ebebec; width: 100%; height: 100%;'>");
+		document.write("<span class='tooBed' style='color: #d1d2d2; position: absolute; top: 310px; left: 300px;'>TOO BED</span>");
+			document.write("<div onclick='myFirst()' class='drop' style='background: #4cd964; border: 5px solid #e9e9e9; width: 95px; height: 35px; border-radius: 35px; position: absolute; top: 300px; left: 500px; display: center;'>");
+			document.write("<span class='ON' style='z-index: 6; color: white; position: absolute; top: 9px; left: 15px;'>ON</span>");
+			document.write("<span class = 'labels' style='width: 45px; height: 45px; background: #d9dcd4; z-index: 8; position: absolute; top: -8px; left: 54px;  border: 2px solid #e8e8e8; border-radius: 50px;'></span>");
+			document.write("<span class = 'bg'style='width: 25px; height: 25px; background: #d7dbd0; z-index: 8; position: absolute; top: 2px; left: 63px;  border: 2px solid #e8e8e8; border-radius: 50px;'></span>");
+			document.write("</div>");
+			document.write("</div>");
+			document.close();
+		a = false;
+		
+	}
+	else{
+			document.open();
+			document.write("<div onclick='myFirst()' class='wrapper'  style='z-index: 6; background: #ebebec; width: 100%; height: 100%;'>");
+				document.write("<span class='tooBed' style='color: #d1d2d2; position: absolute; top: 310px; left: 750px;'>DON'T TURN ME</span>");
+			document.write("<div onclick='myFirst()' class='drop' style='background: #8E8E93; border: 5px solid #e9e9e9; width: 95px; height: 35px; border-radius: 35px; position: absolute; top: 300px; left: 500px;'>");
+			document.write("<span class='OFF' style='z-index: 6; color: white; position: absolute; top: 9px; left: 55px;'>OFF</span>");
+			document.write("<span class = 'labels' style='width: 45px; height: 45px; background: #d9dcd4; z-index: 8; position: absolute; top: -8px; left: -8px;  border: 2px solid #e8e8e8; border-radius: 50px;'></span>");
+			document.write("<span class = 'bg'style='width: 25px; height: 25px; background: #d7dbd0; z-index: 8; position: absolute; top: 2px; left: 2px;  border: 2px solid #e8e8e8; border-radius: 50px;'></span>");
+			document.write("</div>");
+			document.write("</div>");
+			document.close();
+			a = true;
+			
+	}
+}
+
+myFirst();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ <script type="text/javascript">
+// 	var work ={
+// 		name: ["Anjelina", "Julia", "Leanardo"],
+// 		surname: ["Jolie", "Roberts", "Dicaprio"],
+// 		films: ["Mr&Mrs.Smith", "Eat, Pray, Love", "Wolf from Wall Street"]
+// 	}
+// 	for (var i = 0; i < work.name.length; i++) {
+// 		document.write(work.name[i]+" ");
+// 		document.write(work.surname[i]+" ");
+// 		document.write(work.films[i]+" "+"<br>	")
+// 	}
+// 	document.write("<p>List of Employees</p>")
+// var job = function (name, surname, dateofbirth,specialization, saleValue, workExperience){
+// 	this.name=name,
+// 	this.surname=surname,
+// 	this.dateofbirth=dateofbirth,
+// 	this.specialization=specialization,
+// 	this.saleValue= saleValue;
+// 	this.comission=function(){
+// 		return (this.saleValue/100*20);
+// 	},
+// 	this.workExperience=workExperience,
+// 	this.age=function(){
+// 		return (2016-this.dateofbirth);
+// 	},
+// 	this.call = function(){
+// 		document.write(this.name+" "+this.surname+" - "+this.age()+" years old"+" - "+this.specialization+" - "+this.comission()+"$"+"-"+this.workExperience+ " year experience"+"<br>");
+// 	}
+
+// }
+// var person1 = new job ("Gunel ", "Guliyeva ", 1991, "Corporate Tourism manager",5000,3);
+// person1.call();
+// var person2 = new job("Mammadova", "Leyla", 1993, "Marketing manager assistant",2500, 1);
+// person2.call();
+// var person3 = new job ("Askerov", "Sahib", 1995, "Sales",1800, 2);
+// person3.call();
+
+var shop = function (name, sebestoimost){
+	this.name=name,
+	this.sebestoimost=sebestoimost,
+	this.price=function(){
+		return (this.sebestoimost+this.sebestoimost/100*150);
+	},
+	this.call=function(){
+	document.write(this.name+" - "+this.price()+"azn"+ "<br>");
+	}
+	
+}
+var cloth1= new shop ("Shirt", 20);
+cloth1.call();	
+
+
+</script>
+
+</body>
+</html>
